@@ -1,0 +1,15 @@
+Scenario 1 - Development Set-Up:
+
+1. **Discuss & Justify Potential Deployment Options:**
+
+   - **Local Development:**
+     - **Justification:** For local development, using Docker Compose is ideal as the application is already containerized. This allows developers to spin up the entire stack on their local machines easily.
+     - **Infrastructure:** Each service (e.g., web, Redis, worker, and database) can run as a separate container. Developers can modify and test the services independently.
+
+   - **Cloud-Based Development Environment:**
+     - **Azure DevTest Labs / AWS Cloud9:** 
+       - **Justification:** These services provide a cloud-hosted development environment that can mirror production infrastructure closely, ensuring consistency and reducing "it works on my machine" issues.
+       - **Infrastructure:** DevTest Labs or Cloud9 can be configured with the necessary resources, like VM sizes, storage, and networking, simulating a production-like environment.
+     - **Azure Kubernetes Service (AKS) / Amazon EKS (Elastic Kubernetes Service):**
+       - **Justification:** If you're using Kubernetes in production, setting up a similar environment in development allows you to manage and deploy your microservices similarly, ensuring consistency.
+       - **Infrastructure:** A smaller-scale Kubernetes cluster to run the application, allowing for testing in an environment similar to production.
